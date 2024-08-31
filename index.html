@@ -44,6 +44,7 @@
 
         body {
             font-family: 'Poppins-Regular', sans-serif;
+            overflow-x: hidden;
         }
 
         nav {
@@ -59,7 +60,7 @@
             font-family: 'Bebas Neue', sans-serif;
         }
 
-        @media (max-width: 800px) {
+        @media (max-width: 700px) {
             .navbar-brand img {
                 width: 30px;
                 height: 30px;
@@ -76,14 +77,10 @@
                 width: 75%;
             }
 
-            #tres-cards {
-                width: 90%;
-                padding-inline: 30px;
-            }
 
-            #tres-cards img {
-                width: 25%;
-
+            .card{
+                height: 90px !important;
+                width: 90px !important;
             }
 
             h5 {
@@ -127,9 +124,9 @@
 
 <div class="container d-flex justify-content-center">
     <div class="row align-items-center">
-        <div class="col-md d-flex justify-content-center align-items-center flex-column">
+        <div class="col-lg d-flex flex-column justify-content-center align-items-center">
             <h1 class="h1" style="font-family: 'Bebas Neue', sans-serif">Mestre da Limpeza</h1>
-            <div class="d-flex justify-content-center">
+            <div class="col-md d-flex justify-content-center">
                 <p id="texto-especialista" style="text-align: justify">
                     &nbsp;&nbsp;&nbsp;&nbsp;Especialista em limpeza de estofados, ofereço um serviço que renova seus
                     móveis
@@ -138,21 +135,21 @@
                     mais limpo e acolhedor.
                 </p>
             </div>
-            <div id="tres-cards" class="d-flex mt-3" style="gap: 2rem">
-                <div class="card mb-3 align-items-center" style="width: 10rem;">
-                    <img class="mt-3" src="images/speed.png" alt="Um velocimetro" width="64">
+            <div class="row d-flex justify-content-center mt-3" style="gap: 2rem">
+                <div class="col card mb-3 align-items-center" style="width: 10rem;">
+                    <img class="mt-3" src="images/speed.png" alt="Um velocimetro" width="50%">
                     <div class="card-body">
                         <h5 class="card-title">Agilidade</h5>
                     </div>
                 </div>
-                <div class="card mb-3 align-items-center" style="width: 10rem;">
-                    <img class="mt-3" src="images/aperto-de-mao.png" alt="Emoji de um aperto de mãos" width="64">
+                <div class="col card mb-3 align-items-center" style="width: 10rem;">
+                    <img class="mt-3" src="images/aperto-de-mao.png" alt="Emoji de um aperto de mãos" width="50%">
                     <div class="card-body">
                         <h5 class="card-title">Compromisso</h5>
                     </div>
                 </div>
-                <div class="card mb-3 align-items-center" style="width: 10rem;">
-                    <img class="mt-3" src="images/qualidade.png" alt="Emoji de um aperto de mãos" width="64">
+                <div class="col card mb-3 align-items-center" style="width: 10rem;">
+                    <img class="mt-3" src="images/qualidade.png" alt="Emoji de um aperto de mãos" width="50%">
                     <div class="card-body">
                         <h5 class="card-title">Qualidade</h5>
                     </div>
@@ -161,9 +158,9 @@
         </div>
 
 
-        <div class="col-md d-flex justify-content-center">
-            <img id="pessoa-trampando" src="images/cidadao.webp"
-                 alt="pessoa trabalhando com uma extratora de lavagem a seco" width="500px">
+        <div class="col-lg d-flex justify-content-center">
+            <img id="pessoa-trampando" src="images/cidadao.webp" class="img-fluid"
+                 alt="pessoa trabalhando com uma extratora de lavagem a seco" >
         </div>
     </div>
 </div>
