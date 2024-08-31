@@ -53,13 +53,41 @@
         h1, h2, h3 {
             font-family: 'Bebas Neue', sans-serif;
         }
+        @media (max-width: 800px) {
+            .navbar-brand img {
+                width: 30px;
+                height: 30px;
+            }
+            nav{
+                display: flex;
+                justify-content: center;
+                font-size: 10px;
+            }
+            p{
+                font-size: 12px;
+            }
+            #tres-cards{
+                width: 90%;
+                padding-inline: 30px;
+            }
+            #tres-cards img{
+                width: 25%;
+
+            }
+            h5{
+                font-size: 12px;
+            }
+            #pessoa-trampando{
+                width: 200px;
+            }
+        }
 
     </style>
 </head>
 
 <body id="pagina-principal">
 <!-- Barra de navegação  -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand bg-body-tertiary">
     <div class="container">
         <a class="navbar-brand">
             <img src="images/logo-menor.webp" alt="Logo" width="60" height="60">
@@ -81,20 +109,19 @@
         </div>
     </div>
 </nav>
-<!-- Fim da Barra  -->
 
-<!-- Texto inicial e imagem -->
+<br>
 
-<div class="container d-flex justify-content-evenly">
+<div class="container d-flex justify-content-center">
     <div class="row align-items-center">
         <div class="col-md d-flex justify-content-center align-items-center flex-column">
             <h1 class="h1" style="font-family: 'Bebas Neue', sans-serif">Mestre da Limpeza</h1>
-            <p class="container" style="text-align: justify">
+            <p id="texto-especialista" class="container" style="text-align: justify">
                 &nbsp;&nbsp;&nbsp;&nbsp;Especialista em limpeza de estofados, ofereço um serviço que renova seus móveis
                 com técnicas eficazes e produtos de qualidade. Removo manchas, odores e sujeira para deixar seu ambiente
                 mais limpo e acolhedor.
             </p>
-            <div class="d-flex mt-3" style="gap: 2rem">
+            <div id="tres-cards" class="d-flex mt-3" style="gap: 2rem">
                 <div class="card mb-3 align-items-center" style="width: 10rem;">
                     <img class="mt-3" src="images/speed.png" alt="Um velocimetro" width="64">
                     <div class="card-body">
@@ -117,8 +144,8 @@
         </div>
 
 
-        <div class="col-md d-flex justify-content-end">
-            <img src="images/cidadao.webp" alt="pessoa trabalhando com uma extratora de lavagem a seco" width="500">
+        <div class="col-md d-flex justify-content-center">
+            <img id="pessoa-trampando" src="images/cidadao.webp" alt="pessoa trabalhando com uma extratora de lavagem a seco" width="500px">
         </div>
     </div>
 </div>
